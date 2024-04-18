@@ -7,6 +7,8 @@ export async function getRepository(owner: string, repo: string) {
     repo,
   });
 
+  // console.log(data);
+
   return {
     owner: data.owner.login,
     name: data.name,
